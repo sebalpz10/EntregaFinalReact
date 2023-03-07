@@ -1,5 +1,4 @@
 Errores:
  - En el cart me suma mal los precios de los productos agregados y tampoco me muestra una lista con los productos agregados. Solo me muestra el primero y nada mas.
- - El filtrado por categoria no me salio, no se que problema tiene.
 
 Y bueno, como podras ver me faltan detalles como el paso a paso para la instalacion del repositorio, las imagenes/gif´s y el build. tenia pensado hacerlo una vez terminada la pagina junto con el estilo pero bueno, me retrasaron mucho errores que me salian y no sabia como resolver, hasta que los resolvia y me saltaban otros, seguramente ya sabe de lo que hablo, asique bueno, no lo aburro mas, en estos dias estare tratando de dejar la pagina funcionando, no se cuanto me llevara y si tengo un tiempo limite hagamelo saber por favor. Desde ya muchas gracias, que tenga lindo dia.
