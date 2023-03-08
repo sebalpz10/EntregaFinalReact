@@ -24,9 +24,9 @@ const Cart = () => {
                                 <div className="cart-card__container">
                                     <div className="cart-card__body">
                                         <h5 className="cart-card__body-model">{car.model}</h5>
-                                        <p className="cart-card__body-text">Number of vehicles: {car.qnty}</p>
-                                        <p className="cart-card__body-text">Price by unit {new Intl.NumberFormat("de-De").format(car.price)}</p>
-                                        <p className="cart-card__body-text">Total price: {new Intl.NumberFormat("de-De").format(car.price * car.qnty)}</p>
+                                        <p className="cart-card__body-text">Number of vehicles: {car.quantity}</p>
+                                        <p className="cart-card__body-text">Price by unit ${new Intl.NumberFormat("de-De").format(car.price)}</p>
+                                        <p className="cart-card__body-text">Total price: {new Intl.NumberFormat("de-De").format(car.price * car.quantity)}</p>
                                     </div>
                                     <button className="cart-card__btn" onClick={() => removeItem(car.id)}>Remove Vehicle</button>
                                 </div>

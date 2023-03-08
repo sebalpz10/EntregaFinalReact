@@ -15,14 +15,12 @@ export const CartProvider = (props) => {
         if (isInCart(vehicle.id)) {
             const index = cart.findIndex(car => car.id === vehicle.id)
             const aux = [...cart]
-            aux[index].qnty += quantity
-            aux[index].price = aux[index].qnty * aux[index].price
+            aux[index].quantity += quantity
             setCart(aux)
         } else {
             const newVehicle = {
                 ...vehicle,
-                qnty: quantity,
-                price: vehicle.price * quantity
+                quantity: quantity,
             }
 
             setCart([...cart, newVehicle])
@@ -38,11 +36,11 @@ export const CartProvider = (props) => {
     }
 
     const getItemQuantity = () => {
-        return cart.reduce((acum, car) => acum += car.qnty, 0)
+        return cart.reduce((acum, car) => acum += car.quantity, 0)
     }
 
     const totalPrice = () => {
-        return cart.reduce((acum, car) => acum + (car.qnty * car.price), 0)
+        return cart.reduce((acum, car) => acum + (car.quantity * car.price), 0)
     }
 
     return (
